@@ -7,6 +7,9 @@
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
   <link rel="shortcut icon" href="/assets/X_unity.png" type="image/x-icon">
   <link rel="stylesheet" href="output.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>XoUnity</title>
   <style>
     /* BEGIN: Responsive Styles */
@@ -17,15 +20,34 @@
       } */
       .menu-toggle {
         display: block;
+        position: relative;
       }
 
       .menu-items {
         display: none;
       }
 
-      .menu-toggle:checked~.menu-items {
-        display: block;
+      .menu-items a {
+        margin-right: 10px;
       }
+
+      .menu-toggle:checked~.mobile-menu {
+        left: 0;
+      }
+    }
+
+    .mobile-menu {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      position: absolute;
+      left: -100%;
+      top: 0;
+      padding: 0.6rem 0.8rem;
+      transition: all 0.4s ease;
     }
 
     .social-icon {
@@ -38,6 +60,14 @@
     .social-icon:hover {
       opacity: 0.75;
     }
+
+    .hamburger{
+      z-index: 2;
+    }
+
+    .active{
+      color: white;
+    }
   </style>
 </head>
 
@@ -49,14 +79,25 @@
         <img src="assets/xounity_logo_16b9.png" alt="logo" class="w-36 object-cover cursor-pointer">
       </a>
       <nav class="md:ml-auto flex-wrap flex items-center text-base justify-center menu-items md:flex ">
-        <input type="checkbox" id="menu-toggle" class="hidden menu-toggle">
-        <label for="menu-toggle" class="hamburger cursor-pointer md:hidden">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-          </svg>
-        </label>
+       
+          <i class="hamburger md:hidden fa-solid fa-bars w-8 h-8"></i>
+      
+        <div class="mobile-menu bg-xounity-blue">
+          <a class="mr-5 cursor-pointer active hover:text-white">Home</a>
+          <a class="mr-5 cursor-pointer hover:text-white">About</a>
+          <a class="mr-5 cursor-pointer hover:text-white">Events</a>
+          <a class="mr-5 cursor-pointer hover:text-white">Resources</a>
+          <button
+            class="h-10 transition-all inline-flex justify-center items-center border-solid border-xounity-orange border-2 bg-xounity-orange text-rose-50 py-1 px-3 focus:outline-none hover:bg-transparent rounded text-base  md:mt-0"
+            style="transition-duration: 0.5s;">Contact Us
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
         <div class="menu-items hidden md:flex justify-center items-center">
-          <a class="mr-5 cursor-pointer hover:text-white">Home</a>
+          <a class="mr-5 cursor-pointer active hover:text-white">Home</a>
           <a class="mr-5 cursor-pointer hover:text-white">About</a>
           <a class="mr-5 cursor-pointer hover:text-white">Events</a>
           <a class="mr-5 cursor-pointer hover:text-white">Resources</a>
@@ -89,7 +130,7 @@
         <div class="flex justify-center">
 
           <!-- add socialmedia circle logos link with links here -->
-          <div class="flex gap-4">
+          <div class="flex items-center justify-center gap-4 flex-wrap">
             <a href="https://www.instagram.com/xounity1" target="_blank">
               <img src="assets/instagram.png" alt="instagram" class="social-icon w-10 object-cover">
             </a>
@@ -102,8 +143,8 @@
             <a href="https://www.discord.com/xounity1" target="_blank">
               <img src="assets/discord.png" alt="discord" class="social-icon w-10 object-cover">
             </a>
-            <a href="https://www.linkedin.com/xounity1" target="_blank">
-              <img src="assets/linkedin.png" alt="linkedin" class="social-icon w-10 object-cover">
+            <a href="https://www.youtube.com/xounity1" target="_blank">
+              <img src="assets/youtube.png" alt="linkedin" class="social-icon w-10 object-cover">
             </a>
             <a href="https://www.telegram.com/xounity1" target="_blank">
               <img src="assets/telegram.png" alt="telegram" class="social-icon w-10 object-cover">
@@ -122,6 +163,22 @@
   </section>
 
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    let mobileMenu = document.querySelector('.mobile-menu');
+    let menuIcon = document.querySelector('.hamburger');
+    menuIcon.addEventListener('click',()=>{
+      if(mobileMenu.style.left !== '0px'){
+        mobileMenu.style.left = '0px';
+      menuIcon.classList.remove('fa-bars');
+      menuIcon.classList.add('fa-xmark');
+      }
+      else{
+        mobileMenu.style.left = '-100%';
+      menuIcon.classList.remove('fa-xmark');
+      menuIcon.classList.add('fa-bars');
+      }
+    });
+  </script>
 
 </body>
 
