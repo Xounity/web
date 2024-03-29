@@ -25,4 +25,19 @@ let mobileMenu = document.querySelector('.mobile-menu');
         behavior: 'smooth'
       });
     });
+// navbar hide/unhide on scroll
+    let prevScrollPos = window.pageYOffset;
+    let navBar = document.querySelector('header');
+    window.onscroll = function () {
+      let currentScrollPos = window.pageYOffset;
+      if (prevScrollPos > currentScrollPos) {
+        navBar.style.transform = 'translateY(0)';
+        navBar.style.transition = 'transform 0.5s';
+      } else {
+        navBar.style.transform = 'translateY(-100%)';
+        navBar.style.transition = 'transform 0.5s';
+      }
+      prevScrollPos = currentScrollPos;
+      
+    }
   });
