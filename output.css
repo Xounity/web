@@ -1983,11 +1983,6 @@ video {
   background-color: rgb(255 151 5 / var(--tw-bg-opacity));
 }
 
-.bg-yellow-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(234 179 8 / var(--tw-bg-opacity));
-}
-
 .bg-opacity-40 {
   --tw-bg-opacity: 0.4;
 }
@@ -2782,11 +2777,6 @@ video {
 .focus\:border-xounity-orange:focus {
   --tw-border-opacity: 1;
   border-color: rgb(255 151 5 / var(--tw-border-opacity));
-}
-
-.focus\:border-yellow-500:focus {
-  --tw-border-opacity: 1;
-  border-color: rgb(234 179 8 / var(--tw-border-opacity));
 }
 
 .focus\:bg-gray-900:focus {
