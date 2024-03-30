@@ -918,6 +918,10 @@ video {
   height: 100%;
 }
 
+.h-80 {
+  height: 20rem;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -1490,6 +1494,10 @@ video {
 
 .gap-4 {
   gap: 1rem;
+}
+
+.gap-1 {
+  gap: 0.25rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -2367,6 +2375,11 @@ video {
 .text-yellow-400 {
   --tw-text-opacity: 1;
   color: rgb(250 204 21 / var(--tw-text-opacity));
+}
+
+.text-xounity-blue {
+  --tw-text-opacity: 1;
+  color: rgb(9 5 41 / var(--tw-text-opacity));
 }
 
 .underline {
