@@ -139,6 +139,16 @@
       opacity: 0;
     }
 
+    .socials:hover{
+      color: #ff9705;
+      cursor: pointer;
+    }
+
+    .socials2:hover{
+      color: white;
+      cursor: pointer;
+    }
+
     /* END: Responsive Styles */
   </style>
 </head>
@@ -159,6 +169,7 @@
           <a class="mr-5 cursor-pointer hover:text-white">About</a>
           <a class="mr-5 cursor-pointer hover:text-white">Events</a>
           <a class="mr-5 cursor-pointer hover:text-white">Resources</a>
+          <a href="#contact">
           <button
             class="h-10 transition-all inline-flex justify-center items-center border-solid border-xounity-orange border-2 bg-xounity-orange text-rose-50 py-1 px-3 focus:outline-none hover:bg-transparent rounded text-base  md:mt-0"
             style="transition-duration: 0.5s;">Contact Us
@@ -167,12 +178,14 @@
               <path d="M5 12h14M12 5l7 7-7 7"></path>
             </svg>
           </button>
+        </a>
         </div>
         <div class="menu-items hidden md:flex justify-center items-center">
           <a class="mr-5 cursor-pointer active hover:text-white">Home</a>
           <a href="#about" class="mr-5 cursor-pointer hover:text-white">About</a>
           <a class="mr-5 cursor-pointer hover:text-white">Events</a>
           <a class="mr-5 cursor-pointer hover:text-white">Resources</a>
+          <a href="#contact">
           <button
             class="contact-btn h-10 mr-2 inline-flex items-center border-solid border-xounity-orange border-2 text-rose-50  focus:outline-none hover:bg-transparent py-1 px-3 rounded text-base mt-4 md:mt-0"
             style="transition-duration: 0.5s;">Contact Us
@@ -181,6 +194,7 @@
               <path d="M5 12h14M12 5l7 7-7 7"></path>
             </svg>
           </button>
+        </a>
         </div>
       </nav>
     </div>
@@ -258,15 +272,28 @@
               <h2 class="title-font font-medium text-lg text-rose-50">Noman Ahmed</h2>
               <h3 class="text-xounity-blue mb-3">Community Lead</h3>
               <!-- <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p> -->
-              <span class="inline-flex gap-1">
-                <a href="https://www.instagram.com/xounity1" target="_blank">
-                  <img src="assets/instagram.png" alt="instagram" class="social-icon w-8 object-cover">
+              <span class="inline-flex">
+                <a class="text-xounity-blue socials2">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    class="w-5 h-5" viewBox="0 0 24 24">
+                    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                  </svg>
                 </a>
-                <a href="https://www.linkedin.com/company/xounity" target="_blank">
-                  <img src="assets/linkedin.png" alt="linkedin" class="social-icon w-8 object-cover">
+                <a class="ml-2 text-xounity-blue socials2">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    class="w-5 h-5" viewBox="0 0 24 24">
+                    <path
+                      d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                    </path>
+                  </svg>
                 </a>
-                <a href="https://chat.whatsapp.com/Dglys3PUmK3Ktt2OOyKdY6" target="_blank">
-                  <img src="assets/whatsapp.png" alt="whatsapp commmunity" class="social-icon w-8 object-cover">
+                <a class="ml-2 text-xounity-blue socials2">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    class="w-5 h-5" viewBox="0 0 24 24">
+                    <path
+                      d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
+                    </path>
+                  </svg>
                 </a>
               </span>
             </div>
@@ -277,19 +304,19 @@
         <div class="p-4 lg:w-1/4 md:w-1/2">
           <div class="image-card flex flex-col items-center text-center">
             <img alt="team" class="flex-shrink-0 rounded-lg w-full h-80 object-cover object-center"
-              src="https://dummyimage.com/200x200">
+              src="./assets/Furqan.jpeg">
             <div class="w-full image-content">
               <h2 class="title-font font-medium text-lg text-rose-50">Furqan Khalil</h2>
               <h3 class="text-xounity-blue mb-3">Lead Content Writer</h3>
               <!-- <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p> -->
               <span class="inline-flex">
-                <a class="text-xounity-blue">
+                <a class="text-xounity-blue socials2">
                   <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     class="w-5 h-5" viewBox="0 0 24 24">
                     <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
                   </svg>
                 </a>
-                <a class="ml-2 text-xounity-blue">
+                <a class="ml-2 text-xounity-blue socials2">
                   <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     class="w-5 h-5" viewBox="0 0 24 24">
                     <path
@@ -297,7 +324,7 @@
                     </path>
                   </svg>
                 </a>
-                <a class="ml-2 text-xounity-blue">
+                <a class="ml-2 text-xounity-blue socials2">
                   <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     class="w-5 h-5" viewBox="0 0 24 24">
                     <path
@@ -320,13 +347,13 @@
               <h3 class="text-xounity-blue mb-3">Event Manager</h3>
               <!-- <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p> -->
               <span class="inline-flex">
-                <a class="text-xounity-blue">
+                <a class="text-xounity-blue socials2">
                   <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     class="w-5 h-5" viewBox="0 0 24 24">
                     <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
                   </svg>
                 </a>
-                <a class="ml-2 text-xounity-blue">
+                <a class="ml-2 text-xounity-blue socials2">
                   <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     class="w-5 h-5" viewBox="0 0 24 24">
                     <path
@@ -334,7 +361,7 @@
                     </path>
                   </svg>
                 </a>
-                <a class="ml-2 text-xounity-blue">
+                <a class="ml-2 text-xounity-blue socials2">
                   <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     class="w-5 h-5" viewBox="0 0 24 24">
                     <path
@@ -357,13 +384,13 @@
               <h3 class="text-xounity-blue mb-3">Social Media Manager</h3>
               <!-- <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p> -->
               <span class="inline-flex">
-                <a class="text-xounity-blue">
+                <a class="text-xounity-blue socials2">
                   <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     class="w-5 h-5" viewBox="0 0 24 24">
                     <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
                   </svg>
                 </a>
-                <a class="ml-2 text-xounity-blue">
+                <a class="ml-2 text-xounity-blue socials2">
                   <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     class="w-5 h-5" viewBox="0 0 24 24">
                     <path
@@ -371,7 +398,7 @@
                     </path>
                   </svg>
                 </a>
-                <a class="ml-2 text-xounity-blue">
+                <a class="ml-2 text-xounity-blue socials2">
                   <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     class="w-5 h-5" viewBox="0 0 24 24">
                     <path
@@ -394,13 +421,13 @@
               <h3 class="text-xounity-blue mb-3">Tech Team Lead</h3>
               <!-- <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p> -->
               <span class="inline-flex">
-                <a class="text-xounity-blue">
+                <a class="text-xounity-blue socials2">
                   <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     class="w-5 h-5" viewBox="0 0 24 24">
                     <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
                   </svg>
                 </a>
-                <a class="ml-2 text-xounity-blue">
+                <a class="ml-2 text-xounity-blue socials2">
                   <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     class="w-5 h-5" viewBox="0 0 24 24">
                     <path
@@ -408,7 +435,7 @@
                     </path>
                   </svg>
                 </a>
-                <a class="ml-2 text-xounity-blue">
+                <a class="ml-2 text-xounity-blue socials2">
                   <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     class="w-5 h-5" viewBox="0 0 24 24">
                     <path
@@ -431,13 +458,13 @@
               <h3 class="text-xounity-blue mb-3">Tech Team</h3>
               <!-- <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p> -->
               <span class="inline-flex">
-                <a class="text-xounity-blue">
+                <a class="text-xounity-blue socials2">
                   <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     class="w-5 h-5" viewBox="0 0 24 24">
                     <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
                   </svg>
                 </a>
-                <a class="ml-2 text-xounity-blue">
+                <a class="ml-2 text-xounity-blue socials2">
                   <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     class="w-5 h-5" viewBox="0 0 24 24">
                     <path
@@ -445,7 +472,7 @@
                     </path>
                   </svg>
                 </a>
-                <a class="ml-2 text-xounity-blue">
+                <a class="ml-2 text-xounity-blue socials2">
                   <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     class="w-5 h-5" viewBox="0 0 24 24">
                     <path
@@ -466,7 +493,7 @@
 
   <!-- Contact Us -->
 
-  <section class="text-gray-400 bg-transparent body-font relative">
+  <section id="contact" class="text-gray-400 bg-transparent body-font relative">
     <div class="container px-5 py-24 mx-auto">
       <div class="flex flex-col text-center w-full mb-12">
         <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Contact Us</h1>
@@ -527,6 +554,41 @@
       </div>
     </div>
   </section>
+
+  <footer class="text-gray-600 body-font">
+    <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+        <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+          <img src="assets/xounity_logo_16b9.png" alt="logo" class="w-36 object-cover cursor-pointer">
+        </a>
+      <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2024 Xounity —
+        <a href="https://twitter.com/knyttneve" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">@xounity1</a>
+      </p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+        <a class="text-gray-500 socials">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500 socials">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500 socials">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500 socials">
+          <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+            <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+          </svg>
+        </a>
+      </span>
+    </div>
+  </footer>
 
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="app.js"></script>
