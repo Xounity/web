@@ -25,6 +25,7 @@ let mobileMenu = document.querySelector('.mobile-menu');
         behavior: 'smooth'
       });
     });
+
 // navbar hide/unhide on scroll
     let prevScrollPos = window.pageYOffset;
     let navBar = document.querySelector('header');
