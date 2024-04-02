@@ -43,8 +43,30 @@ let mobileMenu = document.querySelector('.mobile-menu');
     }
   });
 
-  // Mobile Nav Links
-  let mob = document.querySelectorAll('.mob');
+const iconsArray = Array.from({length: 8}, (_, i) => document.querySelector(`#s${i+1}`));
+
+function handleMouseOver(opac, scale) {
+  this.style.transform = `scale(${scale})`;
+  this.style.transition = "0.3 ease-in";
+  iconsArray.forEach(icon => {
+    if (icon !== this) {
+      icon.style.opacity = opac;
+    }
+  });
+}
+iconsArray.forEach(function(icon) {
+  icon.addEventListener('mouseover', function() {
+    handleMouseOver.call(this, 0.50, 1.3);
+  });
+  icon.addEventListener('mouseout', handleMouseOut);
+});
+
+function handleMouseOut() {
+  handleMouseOver.call(this, 1, 1);
+}
+
+// Mobile Nav Links
+let mob = document.querySelectorAll('.mob');
 
   mob.forEach(el => {
     el.addEventListener('click',()=>{

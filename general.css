@@ -41,14 +41,14 @@
     outline: none;
   }
 
-  .social-icon:hover {
+  /* .social-icon:hover {
     transform: scale(1.2);
     opacity: 1;
   }
 
   .social-icon:not(:hover) {
     opacity: 0.75;
-  }
+  } */
 
   .hamburger {
     z-index: 2;
