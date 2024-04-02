@@ -50,5 +50,7 @@ let mobileMenu = document.querySelector('.mobile-menu');
     el.addEventListener('click',()=>{
       console.log(el);
       mobileMenu.style.left = '-100%';
+      menuIcon.classList.remove('fa-xmark');
+      menuIcon.classList.add('fa-bars');
     });
   });
