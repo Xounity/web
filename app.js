@@ -25,7 +25,16 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     e.preventDefault();
     const target = this.getAttribute('href');
     const targetElement = document.querySelector(target);
-    const topOffset = targetElement.getBoundingClientRect().top;
+    
+    if (target === '' || target === '/' || target === '#home') {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+      e.preventDefault();
+      return false;
+    }
+    const topOffset = targetElement.getBoundingClientRect().top + window.scrollY;
     window.scrollTo({
       top: topOffset,
       behavior: 'smooth'
