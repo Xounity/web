@@ -65,7 +65,12 @@ function handleMouseOut() {
   handleMouseOver.call(this, 1, 1);
 }
 
+// Mobile Nav Links
+let mob = document.querySelectorAll('.mob');
 
-
-  
-  
+  mob.forEach(el => {
+    el.addEventListener('click',()=>{
+      console.log(el);
+      mobileMenu.style.left = '-100%';
+    });
+  });
