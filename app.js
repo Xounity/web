@@ -118,8 +118,7 @@ const observer = new IntersectionObserver((entries)=>{
   entries.forEach((entry)=>{
     if(entry.isIntersecting){
       entry.target.classList.add('unreveal');
-    }else{
-      entry.target.classList.remove('unreveal');
+      observer.unobserve(entry.target);
     }
   });
 });
@@ -133,8 +132,7 @@ const observer2 = new IntersectionObserver((entries)=>{
   entries.forEach((entry)=>{
     if(entry.isIntersecting){
       entry.target.classList.add('unside');
-    }else{
-      entry.target.classList.remove('unside');
+      observer2.unobserve(entry.target);
     }
   });
 });
@@ -143,6 +141,7 @@ const sideEl = document.querySelectorAll('.side');
 sideEl.forEach((el)=>{
   observer2.observe(el);
 });
+
 // code to change nav bar active link
 let navLinks = document.querySelectorAll('.nav-link');
 navLinks.forEach(link => {
