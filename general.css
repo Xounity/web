@@ -170,5 +170,26 @@
     opacity: 0.75;
   }
   
+  .reveal{
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.5s ease;
+  }
+
+  .unreveal{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
+  .side{
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 0.5s ease;
+  }
+
+  .unside{
+    opacity: 1;
+    transform: translateX(0);
+  }
 
   /* END: Responsive Styles */

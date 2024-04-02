@@ -111,3 +111,35 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+// Reveal Animation
+
+const observer = new IntersectionObserver((entries)=>{
+  entries.forEach((entry)=>{
+    if(entry.isIntersecting){
+      entry.target.classList.add('unreveal');
+    }else{
+      entry.target.classList.remove('unreveal');
+    }
+  });
+});
+
+const revEl = document.querySelectorAll('.reveal');
+revEl.forEach((el)=>{
+  observer.observe(el);
+});
+
+const observer2 = new IntersectionObserver((entries)=>{
+  entries.forEach((entry)=>{
+    if(entry.isIntersecting){
+      entry.target.classList.add('unside');
+    }else{
+      entry.target.classList.remove('unside');
+    }
+  });
+});
+
+const sideEl = document.querySelectorAll('.side');
+sideEl.forEach((el)=>{
+  observer2.observe(el);
+});
