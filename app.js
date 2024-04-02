@@ -42,3 +42,13 @@ let mobileMenu = document.querySelector('.mobile-menu');
       
     }
   });
+
+  // Mobile Nav Links
+  let mob = document.querySelectorAll('.mob');
+
+  mob.forEach(el => {
+    el.addEventListener('click',()=>{
+      console.log(el);
+      mobileMenu.style.left = '-100%';
+    });
+  });

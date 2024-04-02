@@ -29,11 +29,11 @@
         <i class="hamburger md:hidden fa-solid fa-bars w-8 h-8"></i>
 
         <div class="mobile-menu bg-xounity-blue">
-          <a class="mr-5 cursor-pointer active hover:text-white">Home</a>
-          <a class="mr-5 cursor-pointer hover:text-white">About</a>
-          <a class="mr-5 cursor-pointer hover:text-white">Events</a>
-          <a class="mr-5 cursor-pointer hover:text-white">Resources</a>
-          <a href="#">
+          <a id="mob-home" href="#home" class="mob mr-5 cursor-pointer active hover:text-white">Home</a>
+          <a id="mob-about" href="#mob-about" class="mob mr-5 cursor-pointer hover:text-white">About</a>
+          <a id="mob-event" href="#events" class="mob mr-5 cursor-pointer hover:text-white">Events</a>
+          <a id="mob-resources" class="mob mr-5 cursor-pointer hover:text-white">Resources</a>
+          <a id="mob-contact" class="mob" href="#contact">
           <button
             class="h-10 transition-all inline-flex justify-center items-center border-solid border-xounity-orange border-2 bg-xounity-orange text-rose-50 py-1 px-3 focus:outline-none hover:bg-transparent rounded text-base  md:mt-0"
             style="transition-duration: 0.5s;">Contact Us
@@ -49,7 +49,7 @@
         <div class="menu-items hidden md:flex justify-center items-center">
           <a href="#home" class="mr-5 cursor-pointer active hover:text-white">Home</a>
           <a href="#about" class="mr-5 cursor-pointer hover:text-white">About</a>
-          <a class="mr-5 cursor-pointer hover:text-white">Events</a>
+          <a href="#events" class="mr-5 cursor-pointer hover:text-white">Events</a>
           <a class="mr-5 cursor-pointer hover:text-white">Resources</a>
           <a href="#contact">
           <button
@@ -115,59 +115,62 @@
 
         </div>
       </div>
-    </div>
-    
-    <!-- BEGIN: Carousel -->
-      <div class="container px-5 py-24 mx-auto">
-        <div class="flex flex-col text-center w-full mb-20">
-          <h1 class="text-3xl font-medium title-font mb-4 text-white">Upcoming Events</h1>
-          <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn
-            asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them.</p>
-        </div>
-
-    <div class="container mx-auto">
-      <div class="flex flex-wrap -m-4 justify-center">
-        <div class="p-4 md:w-1/3">
-          <div class="rounded-lg overflow-hidden">
-            <img alt="event" class="object-cover object-center h-64 w-full" src="https://dummyimage.com/600x400">
-          </div>
-          <h2 class="text-xl font-medium title-font text-white mt-5">Event 1</h2>
-          <p class="text-base leading-relaxed mt-2">Description of Event 1</p>
-          <button class="text-xounity-orange inline-flex items-center mt-3 cursor-not-allowed" disabled>Coming Soon</button>
-        </div>
-        <div class="p-4 md:w-1/3">
-          <div class="rounded-lg overflow-hidden">
-            <img alt="event" class="object-cover object-center h-64 w-full" src="https://dummyimage.com/600x400">
-          </div>
-          <h2 class="text-xl font-medium title-font text-white mt-5">Event 2</h2>
-          <p class="text-base leading-relaxed mt-2">Description of Event 2</p>
-          <button class="text-xounity-orange inline-flex items-center mt-3">Register Now
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-              <path d="M5 12h14M12 5l7 7-7 7"></path>
-            </svg>
-          </button>
-        </div>
-        <div class="p-4 md:w-1/3">
-          <div class="rounded-lg overflow-hidden">
-            <img alt="event" class="object-cover object-center h-64 w-full" src="https://dummyimage.com/600x400">
-          </div>
-          <h2 class="text-xl font-medium title-font text-white mt-5">Event 3</h2>
-          <p class="text-base leading-relaxed mt-2">Description of Event 3</p>
-          <a href="#" class="text-xounity-orange inline-flex items-center mt-3">Learn More
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-              <path d="M5 12h14M12 5l7 7-7 7"></path>
-            </svg>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <!-- END: Carousel -->
-    
-    
+    </div> 
   </section>
 
   <!-- Hero end -->
+
+  <hr>
+
+  <!-- Events Section Start -->
+
+  <section id="events" class="text-gray-400 bg-xounity-blue body-font mt-10">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col text-center w-full mb-20">
+        <h1 class="text-3xl font-medium title-font mb-4 text-white">Upcoming Events</h1>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn
+          asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them.</p>
+      </div>
+
+  <div class="container mx-auto">
+    <div class="flex flex-wrap -m-4 justify-center">
+      <div class="p-4 md:w-1/3">
+        <div class="rounded-lg overflow-hidden">
+          <img alt="event" class="object-cover object-center h-64 w-full" src="https://dummyimage.com/600x400">
+        </div>
+        <h2 class="text-xl font-medium title-font text-white mt-5">Event 1</h2>
+        <p class="text-base leading-relaxed mt-2">Description of Event 1</p>
+        <button class="text-xounity-orange inline-flex items-center mt-3 cursor-not-allowed" disabled>Coming Soon</button>
+      </div>
+      <div class="p-4 md:w-1/3">
+        <div class="rounded-lg overflow-hidden">
+          <img alt="event" class="object-cover object-center h-64 w-full" src="https://dummyimage.com/600x400">
+        </div>
+        <h2 class="text-xl font-medium title-font text-white mt-5">Event 2</h2>
+        <p class="text-base leading-relaxed mt-2">Description of Event 2</p>
+        <button class="text-xounity-orange inline-flex items-center mt-3">Register Now
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </button>
+      </div>
+      <div class="p-4 md:w-1/3">
+        <div class="rounded-lg overflow-hidden">
+          <img alt="event" class="object-cover object-center h-64 w-full" src="https://dummyimage.com/600x400">
+        </div>
+        <h2 class="text-xl font-medium title-font text-white mt-5">Event 3</h2>
+        <p class="text-base leading-relaxed mt-2">Description of Event 3</p>
+        <a href="#" class="text-xounity-orange inline-flex items-center mt-3">Learn More
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  </section>
+
+   <!-- Events Section Start -->
 
   <hr>
 
@@ -412,7 +415,7 @@
 
   <!-- About Mobile -->
 
-  <section class="text-gray-600 body-font md:hidden">
+  <section id="mob-about" class="text-gray-600 body-font md:hidden">
     <div class="container px-5 py-24 mx-auto">
       <div class="flex flex-col text-center w-full mb-20">
         <h1 class="text-3xl font-medium title-font mb-4 text-white">OUR TEAM</h1>
