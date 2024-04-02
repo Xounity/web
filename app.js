@@ -25,7 +25,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     e.preventDefault();
     const target = this.getAttribute('href');
     const targetElement = document.querySelector(target);
-    
+     
     if (target === '' || target === '/' || target === '#home') {
       window.scrollTo({
         top: 0,
@@ -111,3 +111,31 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+// code to change nav bar active link
+let navLinks = document.querySelectorAll('.nav-link');
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+    });
+    link.classList.add('active');
+  });
+});
+
+//scroll to section from another page
+window.onload = function() {
+  setTimeout(function() {
+    const hash = window.location.hash;
+    if (hash) {
+      const targetElement = document.querySelector(hash);
+      console.log(targetElement);
+      if (targetElement) {
+        const topOffset = targetElement.getBoundingClientRect().top + window.scrollY;
+        window.scrollTo({
+          top: topOffset,
+          behavior: 'smooth'
+        });
+      }
+    }
+  }, 100); //delay of 100 milliseconds
+};
