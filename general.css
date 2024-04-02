@@ -127,7 +127,7 @@
 
   .image-content{
     position: absolute;
-    bottom: -35px;
+    bottom: -90px;
     transition: all 0.8s;
     opacity: 1;
   }
