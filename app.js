@@ -105,12 +105,27 @@ let mybutton = document.getElementById("myBtn");
 window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
+  let mybutton = document.getElementById("myBtn");
+  let footer = document.querySelector("footer");
+
+  let rect = footer.getBoundingClientRect();
+  if (rect.top < window.innerHeight) {
+    // Footer is in the viewport, adjust the position of the button
+    mybutton.style.bottom = (window.innerHeight - rect.top + 10) + "px"; // 10 is for margin
+  } else {
+    // Footer is not in the viewport, reset the position of the button
+    mybutton.style.bottom = "10px";
+  }
+
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     mybutton.style.display = "block";
   } else {
     mybutton.style.display = "none";
   }
 }
+
+window.onscroll = function () { scrollFunction() };
+//go to top end
 
 function topFunction() {
   document.body.scrollTop = 0;
