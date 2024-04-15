@@ -1,3 +1,8 @@
+if (!sessionStorage.getItem('alertShown')) {
+  alert("SITE UNDER CONSTRUCTION!!!\n\nSome features may not work, and there may be placeholder content.\nPlease visit later. Thank you!");
+  sessionStorage.setItem('alertShown', true);
+}
+
 window.addEventListener('load', () => {
   console.clear();
 })
