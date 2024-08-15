@@ -71,24 +71,233 @@
 
   <!-- Goto Top button -->
   <a href="#home" id="myBtn" title="Go to Top"><i class="fa fa-angle-up"></i></a>
-  <!-- Hero start -->
 
   <section class="text-gray-400 bg-xounity-blue body-font mt-10">
-    <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 md:mb-0 mb-10">
-        <img class="object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600">
-      </div>
-      <div
-        class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
-          <br class="hidden lg:inline-block">Events
-        </h1>
-        <p class="mb-8 leading-relaxed">Future and Past Events info will be added here.</p>
-      </div>
-    </div>
 
-    <!-- Hero end -->
+    <!-- Current Events start -->
+
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col w-full mb-4">
+        <h1 class="text-3xl font-medium title-font mb-2 text-white">Recent Events</h1>
+      </div>
+
+      <div class="container mx-auto">
+        <div class="flex flex-wrap -m-4 justify-center">
+          <!-- Event 1 -->
+          <div class="p-4 md:w-1/3" style="transition-delay: 0.3s;">
+            <a class="rounded-lg overflow-hidden drop-shadow-lg" href='https://www.youtube.com/watch?v=vpBBQ9OX2ho'
+              target="_blank">
+              <img alt="event" class="object-cover object-center h-64 w-full cursor-pointer hover:scale-110"
+                src="./assets/harsh.png" style="transition: all 0.5s;">
+            </a>
+            <h2 class="text-xl font-medium title-font text-white mt-5">How To Pursue Your Career in UI/UX</h2>
+            <p class="text-base font-normal leading-relaxed mt-2">By Harsh Advani</p>
+            <a href='https://www.youtube.com/watch?v=vpBBQ9OX2ho' target="_blank"><button
+                class="text-xounity-orange inline-flex items-center mt-3 hover:text-orange-600 duration-300 ease-in-out font-medium">Watch
+                Now
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </button></a>
+          </div>
+          <!-- Event 2 -->
+          <div class="p-4 md:w-1/3" style="transition-delay: 0.4s;">
+            <a class="rounded-lg overflow-hidden drop-shadow-lg" href='https://youtu.be/aV5YVTzqsoQ?si=8CCx2tRrZ2AKd2JB'
+              target="_blank">
+              <img alt="event" class="object-cover object-center h-64 w-full cursor-pointer hover:scale-110"
+                src="./assets/amna.png" style="transition: all 0.5s;">
+            </a>
+            <h2 class="text-xl font-medium title-font text-white mt-5">Unlocking Data Science</h2>
+            <p class="text-base font-normal leading-relaxed mt-2">By Amna Shahzad</p>
+            <a href='https://youtu.be/aV5YVTzqsoQ?si=8CCx2tRrZ2AKd2JB' target="_blank"><button
+                class="text-xounity-orange inline-flex items-center mt-3 hover:text-orange-600 duration-300 ease-in-out font-medium">Watch
+                Now
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </button></a>
+          </div>
+          <!-- Event 3 -->
+          <div class="p-4 md:w-1/3" style="transition-delay: 0.6s;">
+            <a class="rounded-lg overflow-hidden drop-shadow-lg" href="https://www.youtube.com/watch?v=YuT4maa08xg"
+              target="_blank">
+              <img alt="event" class="object-cover object-center h-64 w-full cursor-pointer hover:scale-110"
+                src="./assets/hamza.png" style="transition: all 0.5s;">
+            </a>
+            <h2 class="text-xl font-medium title-font text-white mt-5">Career Building While Studying</h2>
+            <p class="text-base leading-relaxed mt-2">By Hamza Farooqui</p>
+            <a href="https://www.youtube.com/watch?v=YuT4maa08xg"
+              class="text-xounity-orange inline-flex items-center mt-3"><button
+                class="text-xounity-orange inline-flex items-center mt-3 hover:text-orange-600 duration-300 ease-in-out font-medium">Watch
+                Now
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Current Events end -->
+
+      <!-- New Events Start -->
+
+      <div class="container px-5 py-24 mx-auto">
+        <!-- <div class="flex flex-col w-full mb-4">
+          <h1 class="text-3xl font-medium title-font mb-2 text-white">2024</h1>
+        </div> -->
+        <div class="flex justify-between">
+          <select id="options"
+            class="text-center text-white bg-transparent rounded-sm outline-none border border-xounity-orange">
+            <option class="bg-xounity-orange" value="All">All</option>
+            <option class="bg-xounity-orange" value="2024">2024</option>
+          </select>
+
+          <div>
+            <input placeholder="Search Events..."
+              class="w-full placeholder:text-white bg-transparent rounded-full border border-xounity-orange outline-none px-4 text-white"
+              type="text">
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col w-full mb-4">
+        <h2 class="text-3xl font-medium title-font mb-2 text-white">2024</h2>
+      </div>
+
+      <div class="container mx-auto">
+        <div class="flex flex-wrap -m-4 justify-center md:justify-between">
+          <!-- Event 1 -->
+          <div class="p-4 md:w-1/3" style="transition-delay: 0.3s;">
+            <a class="rounded-lg overflow-hidden drop-shadow-lg" href='https://www.youtube.com/watch?v=vpBBQ9OX2ho'
+              target="_blank">
+              <img alt="event" class="object-cover object-center h-64 w-full cursor-pointer hover:scale-110"
+                src="./assets/harsh.png" style="transition: all 0.5s;">
+            </a>
+            <h2 class="text-xl font-medium title-font text-white mt-5">How To Pursue Your Career in UI/UX</h2>
+            <p class="text-base font-normal leading-relaxed mt-2">By Harsh Advani</p>
+            <a href='https://www.youtube.com/watch?v=vpBBQ9OX2ho' target="_blank"><button
+                class="text-xounity-orange inline-flex items-center mt-3 hover:text-orange-600 duration-300 ease-in-out font-medium">Watch
+                Now
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </button></a>
+          </div>
+          <!-- Event 2 -->
+          <div class="p-4 md:w-1/3" style="transition-delay: 0.4s;">
+            <a class="rounded-lg overflow-hidden drop-shadow-lg" href='https://youtu.be/aV5YVTzqsoQ?si=8CCx2tRrZ2AKd2JB'
+              target="_blank">
+              <img alt="event" class="object-cover object-center h-64 w-full cursor-pointer hover:scale-110"
+                src="./assets/amna.png" style="transition: all 0.5s;">
+            </a>
+            <h2 class="text-xl font-medium title-font text-white mt-5">Unlocking Data Science</h2>
+            <p class="text-base font-normal leading-relaxed mt-2">By Amna Shahzad</p>
+            <a href='https://youtu.be/aV5YVTzqsoQ?si=8CCx2tRrZ2AKd2JB' target="_blank"><button
+                class="text-xounity-orange inline-flex items-center mt-3 hover:text-orange-600 duration-300 ease-in-out font-medium">Watch
+                Now
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </button></a>
+          </div>
+          <!-- Event 3 -->
+          <div class="p-4 md:w-1/3" style="transition-delay: 0.6s;">
+            <a class="rounded-lg overflow-hidden drop-shadow-lg" href="https://www.youtube.com/watch?v=YuT4maa08xg"
+              target="_blank">
+              <img alt="event" class="object-cover object-center h-64 w-full cursor-pointer hover:scale-110"
+                src="./assets/hamza.png" style="transition: all 0.5s;">
+            </a>
+            <h2 class="text-xl font-medium title-font text-white mt-5">Career Building While Studying</h2>
+            <p class="text-base leading-relaxed mt-2">By Hamza Farooqui</p>
+            <a href="https://www.youtube.com/watch?v=YuT4maa08xg"
+              class="text-xounity-orange inline-flex items-center mt-3"><button
+                class="text-xounity-orange inline-flex items-center mt-3 hover:text-orange-600 duration-300 ease-in-out font-medium">Watch
+                Now
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </button>
+            </a>
+          </div>
+          <!-- Event 4 -->
+          <div class="p-4 md:w-1/3" style="transition-delay: 0.6s;">
+            <a class="rounded-lg overflow-hidden drop-shadow-lg" href="https://www.youtube.com/watch?v=YuT4maa08xg"
+              target="_blank">
+              <img alt="event" class="object-cover object-center h-64 w-full cursor-pointer hover:scale-110"
+                src="./assets/hamza.png" style="transition: all 0.5s;">
+            </a>
+            <h2 class="text-xl font-medium title-font text-white mt-5">Career Building While Studying</h2>
+            <p class="text-base leading-relaxed mt-2">By Hamza Farooqui</p>
+            <a href="https://www.youtube.com/watch?v=YuT4maa08xg"
+              class="text-xounity-orange inline-flex items-center mt-3"><button
+                class="text-xounity-orange inline-flex items-center mt-3 hover:text-orange-600 duration-300 ease-in-out font-medium">Watch
+                Now
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </button>
+            </a>
+          </div>
+          <!-- Event 5 -->
+          <div class="p-4 md:w-1/3" style="transition-delay: 0.6s;">
+            <a class="rounded-lg overflow-hidden drop-shadow-lg" href="https://www.youtube.com/watch?v=YuT4maa08xg"
+              target="_blank">
+              <img alt="event" class="object-cover object-center h-64 w-full cursor-pointer hover:scale-110"
+                src="./assets/hamza.png" style="transition: all 0.5s;">
+            </a>
+            <h2 class="text-xl font-medium title-font text-white mt-5">Career Building While Studying</h2>
+            <p class="text-base leading-relaxed mt-2">By Hamza Farooqui</p>
+            <a href="https://www.youtube.com/watch?v=YuT4maa08xg"
+              class="text-xounity-orange inline-flex items-center mt-3"><button
+                class="text-xounity-orange inline-flex items-center mt-3 hover:text-orange-600 duration-300 ease-in-out font-medium">Watch
+                Now
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </button>
+            </a>
+          </div>
+          <!-- Event 6 -->
+          <div class="p-4 md:w-1/3" style="transition-delay: 0.6s;">
+            <a class="rounded-lg overflow-hidden drop-shadow-lg" href="https://www.youtube.com/watch?v=YuT4maa08xg"
+              target="_blank">
+              <img alt="event" class="object-cover object-center h-64 w-full cursor-pointer hover:scale-110"
+                src="./assets/hamza.png" style="transition: all 0.5s;">
+            </a>
+            <h2 class="text-xl font-medium title-font text-white mt-5">Career Building While Studying</h2>
+            <p class="text-base leading-relaxed mt-2">By Hamza Farooqui</p>
+            <a href="https://www.youtube.com/watch?v=YuT4maa08xg"
+              class="text-xounity-orange inline-flex items-center mt-3"><button
+                class="text-xounity-orange inline-flex items-center mt-3 hover:text-orange-600 duration-300 ease-in-out font-medium">Watch
+                Now
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </button>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- New Events End -->
+
   </section>
+
+
+
+  <hr>
 
   <!-- Footer -->
 
@@ -138,7 +347,7 @@
   <!-- Footer end -->
 
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="app.js"></script>
+  <script src="app.js" defer="true"></script>
 </body>
 
 </html>
